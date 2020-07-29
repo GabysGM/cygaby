@@ -1,5 +1,5 @@
 import { Given, Then, When } from 'cypress-cucumber-preprocessor/steps'
-import LoginPage from '../../pages/loginPage'
+import LoginPage from './loginPage'
 
 Given('I open the page', () => {
   LoginPage.visit()
