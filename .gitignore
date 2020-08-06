@@ -104,3 +104,4 @@ dist
 .tern-port
 
 jenkins.war
+.DS_Store
