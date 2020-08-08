@@ -8,7 +8,8 @@
     "cy:run-dashboard": "cypress run --record --hey 11c56804-7678-4917-9e18-044e1ce6b412",
     "cy:run:chrome": "cypress run browser chrome",
     "cy:run:firefox": "cypress run browser firefox",
-    "cy:run:electron": "cypress run browser electron"
+    "cy:run:electron": "cypress run browser electron",
+    "start-jenkins": "java -jar jenkins.war -httpPort=8080 --enable-future-java"
   },
   "repository": {
     "type": "git",

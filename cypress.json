@@ -1,7 +1,17 @@
 {
-	"video": false,
-	"defaultCommandTimeout": 5000,
-	"pageLoadTimeout": 5000,
-	"ignoreTestFiles": ["*.js", "*.md"],
-	"testFiles": "**/*.feature"
+  "video": true,
+  "defaultCommandTimeout": 6000,
+  "pageLoadTimeout": 5000,
+  "ignoreTestFiles": ["*.js", "*.md"],
+  "testFiles": "**/*.feature",
+  "watchForFileChanges": false,
+  "chromeWebSecurity": false,
+  "viewportWidth": 1000,
+  "viewportHeight": 600,
+  "waitForAnimation": true,
+  "animationDistanceTreshold": 20,
+  "execTimeout": 60000,
+  "requestTimeout": 15000,
+  "responseTimeout": 15000,
+  "failOnStatusCode": false
 }
