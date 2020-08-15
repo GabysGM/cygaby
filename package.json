@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run-dashboard": "cypress run --record --hey 11c56804-7678-4917-9e18-044e1ce6b412",
+    "cy:run-dashboard": "cypress run --record --key a6b7074e-f022-4e7c-9734-910da755ff51",
     "cy:run:chrome": "cypress run browser chrome",
     "cy:run:firefox": "cypress run browser firefox",
     "cy:run:electron": "cypress run browser electron",
@@ -28,5 +28,8 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "cypress-image-snapshot": "^3.1.1"
   }
 }

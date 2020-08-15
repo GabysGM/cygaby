@@ -2,7 +2,10 @@
   "video": true,
   "defaultCommandTimeout": 6000,
   "pageLoadTimeout": 5000,
-  "ignoreTestFiles": ["*.js", "*.md"],
+  "ignoreTestFiles": [
+    "*.js",
+    "*.md"
+  ],
   "testFiles": "**/*.feature",
   "watchForFileChanges": false,
   "chromeWebSecurity": false,
@@ -13,5 +16,6 @@
   "execTimeout": 60000,
   "requestTimeout": 15000,
   "responseTimeout": 15000,
-  "failOnStatusCode": false
+  "failOnStatusCode": false,
+  "projectId": "i7kg5s"
 }

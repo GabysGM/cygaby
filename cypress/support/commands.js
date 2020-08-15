@@ -24,6 +24,31 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-import { addMatchImageSnapshotPlugin } from 'cypress-image-snapshot/command'
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command'
 
-addMatchImageSnapshotPlugin()
+addMatchImageSnapshotCommand()
+
+Cypress.Commands.add('isVisible', (selector) => {
+  cy.get(selector).should('be.visible')
+})
+
+Cypress.Commands.add('isHidden', (selector) => {
+  cy.get(selector).should('not.exist')
+})
+
+Cypress.Commands.add('setResolution', (size) => {
+  if (Array.isArray(size) && size.length == 2) {
+    cy.viewport(size[0], size[1])
+  } else {
+    //here we expected a string
+    cy.viewport(size)
+  }
+})
+
+Cypress.Commands.add('login', (username, password) => {
+  cy.get('#login_form').should('be.visible')
+  cy.get('#user_login').type('username')
+  cy.get('#password_login').type('password')
+  cy.get('#user_remember_me').click()
+  cy.contains('Sign in').click()
+})
