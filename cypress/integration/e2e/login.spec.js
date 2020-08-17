@@ -20,8 +20,13 @@ describe('Login Success', () => {
     NavBar.signIn()
   })
 
-  it('Should log in', () => {
+  it('Should login', () => {
     LoginPage.login(log_user, log_pass)
     LoginPage.afterLoginURL()
+  })
+
+  it('Should logout', () => {
+    NavBar.logOut()
+    NavBar.displaySigninButton()
   })
 })
