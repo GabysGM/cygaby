@@ -1,10 +1,10 @@
-import { url, log_user, log_pass } from '../../../config'
+import { homeUrl, log_user, log_pass } from '../../../config'
 import NavBar from '../../page-objects/components/NavBar'
 import LoginPage from '../../page-objects/pages/LoginPage'
 
 describe('Login Failed', () => {
   before(() => {
-    cy.visit(url)
+    cy.visit(homeUrl)
     NavBar.clickSingIn()
   })
 
@@ -16,7 +16,7 @@ describe('Login Failed', () => {
 
 describe('Login Success', () => {
   before(() => {
-    cy.visit(url)
+    cy.visit(homeUrl)
     NavBar.clickSingIn()
   })
 
