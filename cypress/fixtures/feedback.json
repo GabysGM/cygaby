@@ -1,6 +1,6 @@
 {
-  "name": "Your name",
-  "email": "email@youremail.com",
-  "subject": "Your subject goes here",
-  "message": "Hello all. I like to automate in Cypress"
+  "feedbName": "Your name",
+  "feedbEmail": "email@youremail.com",
+  "feedbSubject": "Your subject goes here",
+  "feedbMessage": "Hello all. I like to automate in Cypress"
 }
