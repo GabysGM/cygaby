@@ -14,6 +14,6 @@ export default class LoginPage extends BasePage {
   }
 
   static afterLoginURL() {
-    cy.url().contains('account-summary')
+    cy.url().should('include', 'account-summary')
   }
 }

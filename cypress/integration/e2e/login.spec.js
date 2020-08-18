@@ -5,7 +5,7 @@ import LoginPage from '../../page-objects/pages/LoginPage'
 describe('Login Failed', () => {
   before(() => {
     cy.visit(url)
-    NavBar.signIn()
+    NavBar.clickSingIn()
   })
 
   it('Should display error message with wrong credentials', () => {
@@ -17,7 +17,7 @@ describe('Login Failed', () => {
 describe('Login Success', () => {
   before(() => {
     cy.visit(url)
-    NavBar.signIn()
+    NavBar.clickSingIn()
   })
 
   it('Should login', () => {

@@ -7,7 +7,7 @@ export default class NavBar {
     cy.get('#searchTerm').type(`${text} {enter}`)
   }
 
-  static signIn() {
+  static clickSingIn() {
     cy.get('#signin_button').click()
   }
 

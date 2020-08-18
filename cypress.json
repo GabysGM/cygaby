@@ -2,11 +2,8 @@
   "video": true,
   "defaultCommandTimeout": 6000,
   "pageLoadTimeout": 5000,
-  "ignoreTestFiles": [
-    "*.js",
-    "*.md"
-  ],
-  "testFiles": "**/*.feature",
+  "ignoreTestFiles": ["*.md"],
+  "testFiles": "**/*.spec.js",
   "watchForFileChanges": false,
   "chromeWebSecurity": false,
   "viewportWidth": 1000,
