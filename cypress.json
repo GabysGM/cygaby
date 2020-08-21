@@ -1,7 +1,7 @@
 {
-	"video": false,
-	"defaultCommandTimeout": 5000,
-	"pageLoadTimeout": 5000,
-	"ignoreTestFiles": ["*.js", "*.md"],
-	"testFiles": "**/*.feature"
+  "video": false,
+  "defaultCommandTimeout": 5000,
+  "pageLoadTimeout": 5000,
+  "ignoreTestFiles": ["*.md"],
+  "testFiles": "**/*.spec.js"
 }
