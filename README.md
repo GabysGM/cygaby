@@ -1,2 +1,2 @@
 # cygaby
-This is a cypress;s integration with CI/CD different infrastructures
+This is a cypress's integration with CI/CD different infrastructures
